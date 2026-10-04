@@ -10,28 +10,28 @@ int main (){
     scanf(" %c", &c);
     switch(c){
         case '+':
-        printf("%d", a+b);
+        printf("%d\n", a+b);
         break;
         case '-':
-        printf("%d", a-b);
+        printf("%d\n", a-b);
         break;
         case '*':
-        printf("%d", a*b);
+        printf("%d\n", a*b);
         break;
         case '/':
         if(b==0){
-            printf("Error: Division by zero is not allowed.");
+            printf("Error: Division by zero is not allowed.\n");
         } else {
             float div1 = (float)a;
             float div2 = (float)b;
-            printf("%.2f", div1/div2);
+            printf("%.2f\n", div1/div2);
         }
         break;
         case '%':
         if (b==0){
-            printf("Invalid Input.");
+            printf("Invalid Input.\n");
         }else{
-            printf("%d", a%b);
+            printf("%d\n", a%b);
         }
         break;  
         default:
